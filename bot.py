@@ -503,5 +503,4 @@ async def mgr_reject(c: CallbackQuery, bot: Bot):
         return await c.answer("Нет доступа", show_alert=True)
     order_id = int(c.data.split(":")[1])
     n, _ = await db_exec(
-        "UPDATE orders SET status='rejected', handled_by=? WHERE id=? AND status='review'",
-        (
+        "UPDATE orders SET status='rejected', handled_by=? WHERE id=? AND status='review'",(
