@@ -1,4 +1,4 @@
-mport asyncio import logging import os import re import secrets import time
+import asyncio import logging import os import re import secrets import time
 import aiosqlite from aiogram import Bot, Dispatcher, F, Router from aiogram.client.default import DefaultBotProperties from aiogram.enums import ParseMode from aiogram.filters import Command, CommandStart from aiogram.fsm.context import FSMContext from aiogram.fsm.state import State, StatesGroup from aiogram.fsm.storage.memory import MemoryStorage from aiogram.types import ( BotCommand, CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, Message, ) from dotenv import load_dotenv
 load_dotenv() logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s") log = logging.getLogger("starsbot")
 ---------- Конфиг (.env) ----------
